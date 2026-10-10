@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,39 @@
     <h1>HibernateSystem</h1>
     <p>An NVDA add-on that hibernates the Windows system with a single keyboard shortcut.</p>
 
-    <h2>Keyboard Shortcut</h2>
+    <h2>Features</h2>
     <ul>
-        <li><strong>NVDA + Alt + H</strong>: Hibernate the system</li>
+        <li>Hibernates the system instantly with a keyboard shortcut.</li>
+        <li>Runs silently in the background without freezing NVDA.</li>
+        <li>Provides audio feedback via NVDA's speech.</li>
+        <li>Uses a conflict-free default shortcut (<code>NVDA + Shift + Control + H</code>) that can be customized by the user.</li>
     </ul>
 
+    <h2>Keyboard Shortcut</h2>
+    <ul>
+        <li><strong>NVDA + Shift + Control + H</strong>: Hibernate the system</li>
+    </ul>
+
+    <h2>How to Use</h2>
+    <p>Press <strong>NVDA + Shift + Control + H</strong> at any time. NVDA will announce "Hibernating the system..." and then the system will hibernate.</p>
+
+    <h3>Changing the Shortcut</h3>
+    <p>If you prefer a different key combination:</p>
+    <ol>
+        <li>Open the NVDA menu (<strong>NVDA + N</strong>).</li>
+        <li>Go to <strong>Preferences</strong> → <strong>Input Gestures</strong>.</li>
+        <li>In the tree view, find <strong>HibernateSystem</strong>.</li>
+        <li>Select <strong>Hibernate the system</strong>.</li>
+        <li>Click <strong>Add</strong>, press your desired key combination, and confirm.</li>
+        <li>Click <strong>OK</strong>.</li>
+    </ol>
+
     <h2>Requirements</h2>
-    <p>For this add-on to work, the Hibernate feature must be enabled in Windows. Run <code>powercfg /hibernate on</code> as administrator to enable it.</p>
+    <ul>
+        <li>NVDA version 2019.3 or later.</li>
+        <li>Windows 10 or Windows 11.</li>
+        <li>The Hibernate feature must be enabled in Windows. Run <code>powercfg /hibernate on</code> as administrator to enable it.</li>
+    </ul>
 
     <h2>More Information</h2>
     <p>Visit the GitHub repository: <a href="https://github.com/roohank/HibernateSystem">https://github.com/roohank/HibernateSystem</a></p>
